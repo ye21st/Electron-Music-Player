@@ -17,7 +17,7 @@ function createWindow () {
   mainWindow.loadFile('renderer/index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   ipcMain.on('message', (event, arg) => {
       console.log(arg)
